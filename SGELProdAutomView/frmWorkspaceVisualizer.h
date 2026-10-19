@@ -390,20 +390,11 @@ namespace SGELProdAutomView {
 			Pen^ curvePen = gcnew Pen(Color::Blue, 3);
 			g->DrawLines(curvePen, puntosArray);
 
-			// Relleno
-			array<DrawingPointF>^ puntosArrayF = gcnew array<DrawingPointF>(puntos->Count);
-			for (int i = 0; i < puntos->Count; i++) {
-				puntosArrayF[i] = DrawingPointF((float)puntos[i].X, (float)puntos[i].Y);
-			}
-
-			SolidBrush^ fillBrush = gcnew SolidBrush(Color::FromArgb(50, 0, 0, 255));
-			g->FillPolygon(fillBrush, puntosArrayF);
-
 			delete curvePen;
-			delete fillBrush;
 		}
 	}
-private: System::Void btnGraficar_Click(System::Object^ sender, System::EventArgs^ e) {
+
+	private: System::Void btnGraficar_Click(System::Object^ sender, System::EventArgs^ e) {
 	try {
 		// Validar y obtener parámetros
 		double a, b;
@@ -460,7 +451,7 @@ private: System::Void btnGraficar_Click(System::Object^ sender, System::EventArg
 		rtbInfo->Text = calculator->ObtenerEstadisticas();
 
 		// Agregar información de escala
-		rtbInfo->Text += String::Format("\n\nEscala de visualización:\n  {0:F2} mm → 1 píxel\n  {1:F0} mm ≈ diámetro pantalla",
+		rtbInfo->Text += String::Format("\n\nEscala de visualización:\n  {0:F2} mm -> 1 píxel\n  {1:F0} mm (equivale) diámetro pantalla",
 			(1.0 / escala), (400.0 / escala));
 
 		// Forzar repintado del PictureBox

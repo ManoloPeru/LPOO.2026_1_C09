@@ -141,7 +141,7 @@ namespace SGELProdAutomModel {
             "  - Radio mínimo: {4:F2} mm\r\n" +
             "  - Puntos calculados: {5}\r\n" +
             "  - Paso angular: {6:F3} rad ({7:F2}°)\r\n" +
-            "  - Ecuación: r = {0:F2} + {1:F2}·cos(θ)",
+            "  - Ecuación: r = {0:F2} + {1:F2}·cos(theta)",
             a, b, relacion, radioMax, radioMin,
             puntosMilimetros->Count, pasoAngulo, (pasoAngulo * 180.0 / Math::PI));
     }
