@@ -68,10 +68,6 @@ namespace SGELProdAutomView {
 	private: System::Windows::Forms::Label^ label2;
 
 
-
-
-
-
 	private:
 		/// <summary>
 		/// Variable del diseñador necesaria.
