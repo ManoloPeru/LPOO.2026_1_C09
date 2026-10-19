@@ -126,6 +126,7 @@
     <ClInclude Include="TipoRobot.h" />
     <ClInclude Include="UnidadControl.h" />
     <ClInclude Include="UnidadRobotica.h" />
+    <ClInclude Include="WorkspaceCalculator.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ActuadorLineal.cpp" />
@@ -139,6 +140,7 @@
     <ClCompile Include="TipoRobot.cpp" />
     <ClCompile Include="UnidadControl.cpp" />
     <ClCompile Include="UnidadRobotica.cpp" />
+    <ClCompile Include="WorkspaceCalculator.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
